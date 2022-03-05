@@ -52,6 +52,7 @@ class RegisterActivity : AppCompatActivity() {
 
                                         Users.document(email).set(user)
                                         val intent = Intent(this, LoggedIn::class.java )
+                                        intent.putExtra("Email",email)
                                         startActivity(intent)
                                         finish()
 

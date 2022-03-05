@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         Register.setOnClickListener{
             var intent  = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         Login.setOnClickListener{
@@ -37,9 +38,10 @@ class MainActivity : AppCompatActivity() {
                         if (task.isSuccessful){
 
                             var intent  = Intent(this, LoggedIn::class.java)
+                            intent.putExtra("Email",email)
                             startActivity(intent)
-
-                            Toast.makeText(this,"Login Successful",Toast.LENGTH_LONG).show()
+                            finish()
+                            //Toast.makeText(this,"Login Successful",Toast.LENGTH_LONG).show()
                         }else{
                             Toast.makeText(this,"Wrong Details",Toast.LENGTH_LONG).show()
                         }

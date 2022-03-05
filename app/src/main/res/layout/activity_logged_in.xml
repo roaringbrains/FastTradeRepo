@@ -16,56 +16,63 @@
         app:cardElevation="5dp">
 
         <LinearLayout
+            android:id="@+id/Details"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:padding="10dp"
-            android:gravity="center_horizontal">
+            android:padding="10dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Welcome"
+                android:textColor="@color/black"
                 android:textSize="20dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textStyle="bold" />
+
             <TextView
+                android:id="@+id/Name"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_margin="20dp"
                 android:text="Name : Demo Name"
+                android:textColor="@color/black"
                 android:textSize="20dp"
-                android:layout_margin="20dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textStyle="bold" />
+
             <TextView
+                android:id="@+id/Phone"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_margin="20dp"
                 android:text="Phone : Demo Phone"
+                android:textColor="@color/black"
                 android:textSize="20dp"
-                android:layout_margin="20dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textStyle="bold" />
+
             <TextView
+                android:id="@+id/EmailLog"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Email : Demo Email"
-                android:textSize="20dp"
                 android:layout_margin="20dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:text="Email : Demo Email"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
 
     <Button
+        android:id="@+id/Logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Log Out"
-        android:backgroundTint="#FF5722"
-        android:textSize="18sp"
         android:layout_marginTop="50dp"
+        android:backgroundTint="#FF5722"
+        android:text="Log Out"
 
-        />
+        android:textSize="18sp" />
 
 </LinearLayout>
